@@ -16,6 +16,7 @@ const Staff = () => import('@/views/staff/index.vue')
 const Method = () => import('@/views/method/index.vue')
 const Environment = () => import('@/views/environment/index.vue')
 const Complain = () => import('@/views/complain/index.vue')
+const ComplainDetail = () => import('@/views/complain/detail.vue')
 const Audit = () => import('@/views/audit/index.vue')
 const EquipmentRepair = () => import('@/views/equipment_repair/index.vue')
 const Document = () => import('@/views/document/index.vue')
@@ -39,6 +40,7 @@ const router = createRouter({
     { path: '/method', name: 'method', component: Method },
     { path: '/environment', name: 'environment', component: Environment },
     { path: '/complain', name: 'complain', component: Complain },
+    { path: '/complain/:id(\\d+)', name: 'complain-detail', component: ComplainDetail },
     { path: '/audit', name: 'audit', component: Audit },
     { path: '/equipment_repair', name: 'equipment_repair', component: EquipmentRepair },
     { path: '/document', name: 'document', component: Document },
